@@ -1,0 +1,100 @@
+<!-- david@dpow.net -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hover Follow</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="hover-list">
+	<h1>List of Things</h1>
+	<ul>
+		<li class="hover-object">
+			<a href="#">
+		    	<h3>
+		    		<span class="circle" style="background-color: #2d2d;"></span>
+		    		<span>Cleona&nbsp;</span>
+		    		<span class="type-thin block">description describing what this describes</span>
+		    	</h3>
+		    	<img class="hover-img" alt="" src="https://placeimg.com/640/480/arch" />
+			</a>
+
+		</li>
+
+		<li class="hover-object">
+			<a href="#">
+		    	<h3>
+		    		<span class="circle" style="background-color: #E4B280;"></span>
+		    		<span>Tesla&nbsp;</span>
+		    		<span class="type-thin block">description of this descriptive description</span>
+		    	</h3>
+		    	<img class="hover-img" alt="" src="https://placeimg.com/480/640/arch" />
+			</a>
+
+		</li>
+
+		<li class="hover-object">
+			<a href="#">
+		    	<h3>
+		    		<span class="circle" style="background-color: #1A6FE6;"></span>
+		    		<span>Charlie&nbsp;</span>
+		    		<span class="type-thin block">description describing what this may describe</span>
+		    	</h3>
+		    	<img class="hover-img" alt="" src="https://placeimg.com/800/400/arch" />
+			</a>
+
+		</li>
+
+		<li class="hover-object">
+			<a href="#">
+		    	<h3>
+		    		<span class="circle" style="background-color: #7B684B;"></span>
+		    		<span>HoverBro&nbsp;</span>
+		    		<span class="type-thin block">description describing this description</span>
+		    	</h3>
+		    	<img class="hover-img" alt="" src="https://placeimg.com/480/640/arch" />
+			</a>
+
+		</li>
+
+		<li class="hover-object">
+			<a href="#">
+		    	<h3>
+		    		<span class="circle" style="background-color: #646464;"></span>
+		    		<span>Storage&nbsp;</span>
+		    		<span class="type-thin block">description describing what this describes</span>
+		    	</h3>
+		    	<img class="hover-img" alt="" src="https://placeimg.com/640/480/arch" />
+			</a>
+
+		</li>
+
+	</ul>
+
+
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) { 	
+	var tooltips = document.querySelectorAll('.hover-object img');
+
+	window.onmousemove = function(e) {
+	  var x = (e.clientX + 50) + 'px',
+	    y = (e.clientY - 200) + 'px';
+	  for (var i = 0; i < tooltips.length; i++) {
+	    tooltips[i].style.top = y;
+	    tooltips[i].style.left = x;
+	  }
+	};
+
+	console.log('I just ran');
+
+
+	});
+</script>
+</body>
+</html>

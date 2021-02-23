@@ -1,0 +1,138 @@
+/* david@dpow.net */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+
+body {
+	background-color: #121212;
+	background-color: #0d0d0d;
+}
+
+
+ul, li {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+
+
+ul {
+	width: 96%;
+	margin: 0 2%;
+	cursor: pointer;
+}
+
+
+ul li {
+	border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+	border-width: 1px 0;
+	padding: 0 0 0 1em;
+
+}
+
+
+ul li:first-of-type {
+	border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+
+ul li:last-of-type {
+	border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* Styles */
+
+.hover-list {
+	background-color: #0d0d0d;
+	padding: 1em 0;
+	padding: 5vw 10vw;
+
+}
+
+
+.hover-object .hover-img {
+	max-width: 30vw;
+}
+
+
+.hover-list h1 {
+	font-family: Mulish, sans-serif;	
+	text-transform: uppercase;
+	font-size: 42px;
+	color: #fff;
+	padding-bottom: .2em;
+	margin-left: 2%;
+}
+
+
+.hover-object a {
+	font-family: Mulish, sans-serif;
+	font-size: 20px;
+	font-size: 1.3em;
+	font-weight: 300;
+	color: #fff;
+	transition: color 0.5s;
+	text-decoration: none;
+}
+
+
+.type-thin {
+	color: hsla(0, 0%, 100%, 0.5);
+	transition: color 0.5s;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+
+.circle {
+	display: inline-block;
+	width: .7em;
+	height: 0;
+	padding-bottom: .7em;
+	border-radius: 50%;
+	margin: 0 1%;
+}
+
+
+.block {
+	display: inline-block;
+}
+
+
+
+/* Show and hide images */
+.hover-object .hover-img {
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+
+.hover-object:hover .hover-img {
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+
+
+/* Text color change on hover */
+ul:hover a, ul:hover .type-thin {
+    color: #898989;
+}
+
+
+ul li:hover a, ul li:hover .type-thin {
+    color: #fff;
+}
+
+
+
